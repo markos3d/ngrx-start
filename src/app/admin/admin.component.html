@@ -1,0 +1,10 @@
+<h1>Admin's data</h1>
+<hr>
+
+<div *ngFor="let item of samples$ | async">
+    <p>{{item.userCount}}</p>
+    <p>{{item.userType}}</p>
+    <p>{{item.description}}</p>
+</div>
+
+<div>loaded route: {{loadedRoute$ | async}}</div>
