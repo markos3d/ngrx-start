@@ -9,7 +9,7 @@ let devImports = [
     StoreDevtoolsModule.instrument({
         maxAge: 25,
         logOnly: false,
-    }),
+    connectInZone: true}),
 ];
 
 if (!isDevMode) {
